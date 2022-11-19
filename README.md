@@ -1,5 +1,5 @@
 ## 介绍
-springboot集成minio实现了分片上传功能
+Springboot集成Minio实现了前端自动分片并直传Minio服务端功能
 
 在这位老哥的基础上修改而成
 https://github.com/WinterChenS/minio-multipart
