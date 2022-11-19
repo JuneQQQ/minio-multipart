@@ -1,0 +1,32 @@
+server:
+  port: 15005
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  redis:
+    password: ...
+    host: ....
+  servlet:
+    multipart:
+      maxFileSize: 100MB  # 单文件最大上传大小
+      maxRequestSize:  100MB   # 单词请求最大大小
+  application:
+    name: minio-multipart
+
+thread:
+  pool:
+    core-size: 20
+    keep-alive-time: 60
+
+minio:
+  endpoint: http://...:9000 # Minio服务所在地址
+  accessKey: ... # 访问的key
+  secretKey: ... # 访问的秘钥
+  downloadUri: http://...:9000
+  path: http://...:9000
+
+logging:
+  level:
+    com.juneqqq: debug
+
